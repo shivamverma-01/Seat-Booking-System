@@ -1,0 +1,114 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  max-width: 600px; /* Reduced width */
+  margin: 20px auto; /* Reduced margin */
+  background-color: #FFFFFF;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 22px; /* Reduced font size */
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px; /* Reduced font size */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+label {
+  font-size: 12px; /* Reduced font size */
+}
+
+select {
+  padding: 6px; /* Reduced padding */
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  font-size: 12px; /* Reduced font size */
+  margin-left: 8px; /* Reduced margin */
+}
+
+/* Seats Section */
+.seats-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Reduced margin */
+}
+
+.seats-container {
+  display: grid;
+  grid-template-columns: repeat(5, 40px); /* Reduced size */
+  grid-gap: 8px; /* Reduced gap */
+}
+
+/* Seat Box */
+.seat-box {
+  width: 40px; /* Reduced size */
+  height: 40px; /* Reduced size */
+  font-size: 12px; /* Reduced font size */
+}
+
+/* Passenger Details Section */
+.details-section {
+  margin-top: 20px; /* Reduced margin */
+}
+
+/* User Details Form */
+.user-details-form {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+input {
+  width: 100%; /* Full width for inputs */
+  padding: 5px; /* Reduced padding */
+  margin-top: 5px; /* Reduced margin */
+  font-size: 12px; /* Reduced font size */
+}
+
+/* Confirm Button */
+.confirm-button {
+  margin-top: 15px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  font-size: 14px; /* Reduced font size */
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.confirm-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* User Details Form */
+.user-details-form {
+    margin: 10px 15px; /* Top/Bottom: 10px, Left/Right: 15px */
+    padding: 10px; /* Optional: Add padding for better spacing inside the form */
+    padding-right: 40px;
+    border: 1px solid #ddd; /* Optional: Add a border for visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Optional: Light background color */
+}
+/* Seat Box */
+.seat-box {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
