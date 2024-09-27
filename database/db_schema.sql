@@ -10,7 +10,7 @@ CREATE TABLE `buses` (
   `bus_no` varchar(255) DEFAULT NULL,
   `total_seats` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 -- Create the customers table
 CREATE TABLE `customers` (
@@ -24,7 +24,7 @@ CREATE TABLE `customers` (
   `middle_name` varchar(255) DEFAULT NULL,
   `seat_no` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 -- Create the seats table
 CREATE TABLE `seats` (
@@ -34,7 +34,7 @@ CREATE TABLE `seats` (
   `is_reserved` bit(1) NOT NULL,
   `seat_no` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=161 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 -- Insert sample data into the seats table for multiple buses
 INSERT INTO `seats` (`bus_no`, `is_locked`, `is_reserved`, `seat_no`)
