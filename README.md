@@ -1,6 +1,8 @@
 Seat Reservation Application
 ============================
 
+* * *
+
 This repository contains a Dockerized seat reservation application with a **React frontend**, **Spring Boot backend**, and **MySQL database**. You can run the entire application with a single command using Docker Compose, with images pulled directly from Docker Hub.
 
 Prerequisites
@@ -9,38 +11,45 @@ Prerequisites
 *   **Docker**: [Install Docker](https://docs.docker.com/get-docker/)
 *   **Docker Compose**: [Install Docker Compose](https://docs.docker.com/compose/install/)
 
+Project Setup
+-------------
+
+To set up the project locally, follow these steps:
+
+1.  Clone the repository:
+    
+        git clone https://github.com/shivamverma-01/Seat-Booking-System.git
+        cd Seat-Booking-System
+    
+
 Getting Started
 ---------------
 
 To run the application, follow these steps:
 
-### 1\. Download the `docker-compose.yml` file
-
-Download or copy the `docker-compose.yml` file from this repository, which configures the services and pulls images from Docker Hub.
-
-### 2\. Run Docker Compose
+### 1\. Start the application with Docker Compose
 
 Open a terminal in the same directory as `docker-compose.yml` and run:
 
-    docker-compose up -d
+    docker-compose up --build
 
 This command will:
 
-*   Pull the required images from Docker Hub:
-    *   **MySQL**: `mysql:latest`
-    *   **Backend**: `shivam058/seat-reservation-backend:latest`
-    *   **Frontend**: `shivam058/seat-reservation-frontend:latest`
-*   Start all services in the correct order, with the MySQL database initialized automatically.
+*   Set up a MySQL container for the database.
+*   Launch the Spring Boot backend service.
+*   The application will be accessible at [http://localhost:8080](http://localhost:8080) for backend API requests.
 
-### 3\. Access the Application
+### 2\. Access the Frontend (React)
 
-Once all services are running, you can access them as follows:
+Once the backend is running, the frontend will be available at:
 
 *   **Frontend (React)**: [http://localhost:3000](http://localhost:3000)
-*   **Backend (Spring Boot)**: Accessible at [http://localhost:8080](http://localhost:8080) for API requests
-*   **Database (MySQL)**: Available on port `3307`, with credentials specified in the `docker-compose.yml` file
 
-**Note**: The MySQL database will be initialized with the schema from `db_schema.sql`, located in the `database` directory.
+### 3\. Verify API Endpoints
+
+You can use Postman or curl to make requests to the available API endpoints. For example:
+
+    curl http://localhost:8080/api/endpoints
 
 ### 4\. Stopping the Application
 
